@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+:root {
+  --color-1: #fff5f2;
+  --color-3: #000000;
+  --color-2: #ffedf6;
+  --salmon: #f9004d;
+  --gold: #feac32;
+  --orange: #ffac33;
+  --dark-orange: #f89808;
+}
+
+body {
+  background-color: var(--color-2);
+  color: var(--color-3);
+}
+
+body,
+#message-input:placeholder-shown {
+  text-align: center;
+}
+
+textarea {
+  max-width: 90%;
+}
+
+.main-text {
+  margin: 25px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.message-label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  
+}
+
+#message-input:placeholder-shown,
+textarea {
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  margin: 10px auto;
+  color: var(--color-3);
+  background-color: var(--salmon);
+  border: 2px solid transparent;
+  padding: 20px 0 20px 0;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color:transparent;
+  border: 2px solid var(--salmon);
+}
+
+#result {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.footer {
+  margin-top: 10px;
+}
+#message-input{
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+#message-input:focus{
+  outline:none;
+}
